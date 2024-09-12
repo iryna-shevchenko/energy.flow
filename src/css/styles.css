@@ -4,15 +4,19 @@
   | default @import url()
   |============================
 */
-/* Common styles */
 @import url('./reset.css');
-@import url('./base.css');
-@import url('./container.css');
-@import url('./animations.css');
-
-/* Sections style */
+@import url('./global.css');
 @import url('./header.css');
-@import url('./vite-promo.css');
-@import url('./badges.css');
-@import url('./back-link.css');
+@import url('./hero.css');
+@import url('./filters.css');
+@import url('./exercises.css');
+@import url('./quote.css');
+@import url('./about-sport.css');
+@import url('./favorites.css');
 @import url('./footer.css');
+@import url('./mobile-menu.css');
+@import url('./modal-exercise.css');
+@import url('./modal-rating.css');
+@import url('./modal-subscribe.css');
+@import url('./favorites-main.css');
+@import url('./back-to-top.css');

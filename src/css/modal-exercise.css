@@ -1,0 +1,371 @@
+.backdrop {
+  position: fixed;
+  display: block;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  width: 100%;
+  height: 100%;
+  background-color: #1b1b1b99;
+
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+
+  transition: opacity 500ms linear, visibility 500ms linear;
+}
+
+.backdrop.is-open {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: all;
+}
+
+.modal-open {
+  overflow: hidden;
+}
+
+.modal-exercise {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 20px;
+  background-color: #f6f6f6;
+  width: 335px;
+  min-height: 354px;
+  padding: 40px 20px;
+}
+
+.close-btn {
+  padding: 0px;
+  line-height: 0;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  top: 14px;
+  right: 14px;
+  position: absolute;
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.close-btn:hover,
+.close-btn:focus {
+  transform: scale(1.2) rotate(90deg);
+}
+
+.modal-close-icon {
+  stroke: #1b1b1b;
+}
+
+
+
+.modal-ex-img-container {
+  width: 295px;
+  height: 258px;
+  border-radius: 12px;
+}
+
+.modal-ex-text-info {
+  margin-top: 20px;
+}
+.modal-ex-name-rating-container {
+}
+
+.title-modal-exercise {
+  color: #1b1b1b;
+  font-feature-settings: 'clig' off, 'liga' off;
+  font-family: 'DM Sans';
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1;
+
+}
+.title-modal-exercise::first-letter {
+  text-transform: uppercase;
+}
+.modal-ex-rating-container1 {
+  margin-top: 10px;
+  align-items: flex-end;
+  display: flex;
+  gap: 2px;
+}
+.mod-ex-rating {
+  color: #1b1b1b;
+  font-feature-settings: 'clig' off, 'liga' off;
+  font-family: 'DM Sans';
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+.mod-ex-rating-star {
+  line-height: 0;
+}
+
+.modal-icon-star {
+  fill: #eea10c;
+}
+
+.modal-ex-about-exercise-container {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border-top-style: solid;
+  border-top-width: 1px;
+  border-top-color: rgba(27, 27, 27, 0.2);
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  border-bottom-color: rgba(27, 27, 27, 0.2);
+}
+.about-exercise-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+.title-description {
+  color: rgba(27, 27, 27, 0.4);
+  font-feature-settings: 'clig' off, 'liga' off;
+  font-family: 'DM Sans';
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1.5;
+}
+.value-description {
+  color: #1b1b1b;
+  font-feature-settings: 'clig' off, 'liga' off;
+  font-family: 'DM Sans';
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.29;
+}
+
+.value-description::first-letter {
+  text-transform: uppercase;
+}
+
+.modal-ex-description-text-container {
+}
+.description-text {
+  color: rgba(27, 27, 27, 0.6);
+  font-family: 'DM Sans';
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.29;
+}
+.ex-modal-btn-container {
+  margin-top: 40px;
+}
+.button {
+}
+.ex-modal-btn-list {
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+}
+
+.ex-modal-btn-list-item {
+}
+
+.ex-modal-btn {
+  display: block;
+  /* padding: 12px; */
+  width: 100%;
+  min-height: 42px;
+  justify-content: center;
+  align-items: center;
+  height: 48px;
+  border-radius: 30px;
+}
+
+.add-favorite {
+  padding: 0;
+  align-items: center;
+  display: flex;
+  gap: 8px;
+  color: #f6f6f6;
+  font-family: 'DM Sans';
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1;
+  background-color: #7e847f;
+  border: transparent;
+  /* min-width: 220px; */
+}
+.add-favorite:hover,
+.add-favorite:focus {
+  border-radius: 30px;
+  background-color: #5F6560;
+}
+
+
+.btn-icon-add-remove-favorite {
+  line-height: 0;
+}
+
+.modal-icon-favorite {
+  stroke-width: 1.5px;
+  stroke: #f6f6f6;
+  fill: none;
+}
+.rating-btn {
+  border: 1px solid #7E847F;
+  color: #7E847F;
+  /* width: 128px; */
+}
+.rating-btn:hover,
+.rating-btn:focus {
+  border: 1px solid #1b1b1b;
+  color: #1B1B1B;
+}
+
+@media screen and (min-width: 768px) {
+  .modal-exercise {
+    width: 716px;
+
+    padding: 40px;
+  }
+
+  .close-btn {
+    top: 16px;
+    right: 16px;
+  }
+
+  .modal-close-icon {
+    width: 28px;
+    height: 28px;
+  }
+
+  .modal-ex-img-container {
+    width: 270px;
+    height: 259px;
+  }
+
+  .base-ex-info-modal {
+    display: flex;
+    gap: 24px;
+  }
+
+  .modal-ex-about-exercise-container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .modal-ex-text-info {
+    margin-top: 0px;
+    width: 342px;
+  }
+
+  .title-modal-exercise {
+    font-size: 24px;
+  }
+
+  /* .modal-ex-rating-container {
+    margin-top: 8px;
+  } */
+
+  .modal-ex-about-exercise-container {
+    padding-top: 8px;
+    padding-bottom: 8px;
+    margin-top: 16px;
+    margin-bottom: 16px;
+  }
+
+  .about-exercise-list {
+    gap: 16px;
+  }
+
+  .ex-modal-btn-container {
+    margin-top: 32px;
+  }
+
+  .ex-modal-btn-list {
+    flex-direction: row;
+    gap: 7px;
+    justify-content: space-around;
+  }
+
+  .ex-modal-btn {
+    /* padding: 12px 24px; */
+    /* width: 100%; */
+    min-height: 42px;
+    font-size: 16px;
+  }
+  .add-favorite {
+    width: 220px;
+  }
+  .rating-btn {
+    width: 128px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .modal-exercise {
+    width: 732px;
+  }
+
+  .base-ex-info-modal {
+    gap: 40px;
+  }
+}
+
+
+/* ============== STARS ======== */
+
+.modal-ex-rating-container {
+  margin-top: 10px;
+  display: flex;
+  align-items: flex-end;
+  font-size: 26px;
+  line-height: 0.75;
+}
+.rating-body {
+  position: relative;
+}
+
+.rating-body::before {
+  content: "★★★★★";
+  display: block;
+}
+
+#rating-active {
+  position: absolute;
+  /* width: 100%; */
+  height: 100%;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+}
+
+.rating-active::before {
+  content: "★★★★★";
+  position: absolute;
+  /* width: 100%; */
+  height: 100%;
+  top: 0;
+  left: 0;
+  color: #eea10c;
+}
+
+.rating-items {
+  display: flex;
+  position: absolute;
+  width: 10%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+.rating-item {
+  flex: 0 0 20%;
+  height: 100%;
+  opacity: 0;
+}
+.rating-value {
+  font-size: 50%;
+  line-height: 1;
+  padding-left: 0px;
+}
+

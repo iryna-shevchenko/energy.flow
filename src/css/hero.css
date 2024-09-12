@@ -1,0 +1,253 @@
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.hero-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 20px 0;
+  max-width: 375px;
+}
+
+.hero-box {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.static {
+  position: relative;
+}
+
+.hero-bg-img {
+  display: flex;
+  width: 335px;
+  height: 387px;
+  border-radius: 30px;
+  background-image: url(../img/hero/girl-mobile.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.overlay-teg {
+  position: absolute;
+  bottom: 20px;
+  left: 10px;
+  width: 141px;
+  height: 48px;
+}
+
+.hero-teg-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+}
+
+.hero-teg {
+  display: flex;
+  padding: 4px 10px;
+  height: 22px;
+  color: #f6f6f6;
+  font-size: 12px;
+  line-height: 1.16;
+  border-radius: 30px;
+  border: 1px solid rgba(246, 246, 246, 0.3);
+}
+
+.title-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 335px;
+  height: 365px;
+  border-radius: 30px;
+  background-color: #ffffff;
+  padding: 60px 20px 81px;
+}
+
+.hero-title,
+.another-color-text {
+  color: #1b1b1b;
+  font-size: 56px;
+  font-weight: 400;
+  line-height: 0.89;
+  letter-spacing: -0.02em;
+}
+
+.hero-title,
+.hero-text {
+  animation: fadeIn 2s ease-in 1;
+}
+
+.another-color-text {
+  color: #7e847f;
+  font-style: italic;
+}
+
+.hero-text {
+  color: #1b1b1b;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.28;
+  letter-spacing: -0.01em;
+  width: 265px;
+}
+
+/* bg-image 2x+ for mobile */
+
+@media screen and (min-resolution: 192dpi) and (max-width: 767px),
+  screen and (min-resolution: 2dppx) and (max-width: 767px),
+  screen and (min-device-pixel-ratio: 2) and (max-width: 767px) {
+  .hero-bg-img {
+    background-image: url('../img/hero/girl-mobile@2x.jpg');
+  }
+}
+
+/* TABLET */
+
+@media screen and (min-width: 768px) {
+  .hero-container {
+    max-width: 768px;
+    padding: 16px 16px 0;
+  }
+
+  .hero-box {
+    flex-direction: row;
+    gap: 0;
+  }
+
+  .hero-bg-img {
+    background-image: url(../img/hero/girl-tablet.jpg);
+    width: 248px;
+    height: 900px;
+    border-radius: 50px 0px 50px 50px;
+  }
+
+  /* bg-image 2x+ for tablet */
+
+  @media screen and (min-resolution: 192dpi) and (min-width: 768px),
+    screen and (min-resolution: 2dppx) and (min-width: 768px),
+    screen and (min-device-pixel-ratio: 2) and (min-width: 768px) {
+    .hero-bg-img {
+      background-image: url('../img/hero/girl-tablet@2x.jpg');
+    }
+  }
+
+  .hero-teg-list {
+    gap: 8px;
+  }
+
+  .overlay-teg {
+    bottom: 64px;
+    left: 20px;
+    width: 200px;
+    height: 72px;
+  }
+
+  .hero-teg {
+    padding: 4px 16px;
+    height: 32px;
+    font-size: 16px;
+    line-height: 1.5;
+  }
+
+  .title-container {
+    gap: 25px;
+    width: 488px;
+    height: 900px;
+    border-radius: 0px 50px 50px 50px;
+    background-color: #ffffff;
+    padding: 231px 32px 192px;
+  }
+
+  .hero-title,
+  .another-color-text {
+    font-size: 98px;
+    font-weight: 400;
+    line-height: 0.96;
+  }
+
+  .hero-text {
+    font-size: 18px;
+    line-height: 1.33;
+    width: 342px;
+  }
+}
+
+/* DESKTOP */
+
+@media screen and (min-width: 1280px) {
+  .hero-container {
+    width: 1408px;
+    max-width: 1440px;
+  }
+
+  .hero-box {
+    flex-direction: row;
+    gap: 0;
+  }
+
+  .hero-bg-img {
+    background-image: url(../img/hero/girl-desktop.jpg);
+    width: 704px;
+    height: 884px;
+    transition: transform 1400ms ease;
+    overflow: hidden;
+    display: block;
+    position: relative;
+  }
+
+  .hero-bg-img:before {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: inherit;
+    transform: scale(1);
+    border-radius: 50px 0px 50px 50px;
+    transition: transform 1400ms ease;
+  }
+
+  .hero-bg-img:hover:before {
+    transform: scale(1.03);
+  }
+
+  /* bg-image 2x+ for desktop */
+
+  @media screen and (min-resolution: 192dpi) and (min-width: 1280px),
+    screen and (min-resolution: 2dppx) and (min-width: 1280px),
+    screen and (min-device-pixel-ratio: 2) and (min-width: 1280px) {
+    .hero-bg-img {
+      background-image: url('../img/hero/girl-desktop@2x.jpg');
+    }
+  }
+
+  .overlay-teg {
+    bottom: 32px;
+    left: 48px;
+  }
+
+  .title-container {
+    width: 704px;
+    height: 884px;
+    padding: 225px 32px 241px;
+  }
+
+  .hero-title,
+  .another-color-text {
+    font-size: 120px;
+    line-height: 0.95;
+  }
+
+  .hero-text {
+    width: 515px;
+  }
+}
