@@ -2,127 +2,924 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/energy.flow/favicon.svg" />
+    <link rel="icon" type="image/svg+xml" href="/energy.flow/ener-gym.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vanilla App Template</title>
+    <title>EnerGYM</title>
+    <meta
+      name="description"
+      content="EnerGYM is your guide to better fitness. Gain access to personalized exercises designed to strengthen your body and boost overall physical activity. Join us today and start your journey to a healthier lifestyle with our expert workouts and daily inspirational quotes."
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,700;1,9..40,400&display=swap"
+      rel="stylesheet"
+    />
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <script type="module" crossorigin src="/energy.flow/index.js"></script>
-    <link rel="stylesheet" crossorigin href="/energy.flow/assets/styles-DvPDDfy5.css">
+    <link rel="modulepreload" crossorigin href="/energy.flow/assets/vendor-oMt0CAvQ.js">
+    <link rel="modulepreload" crossorigin href="/energy.flow/assets/navigation-FcoFiihw.js">
+    <link rel="stylesheet" crossorigin href="/energy.flow/assets/navigation-9WJXTXu9.css">
   </head>
+
   <body>
-    <header class="header">
-  <div class="container">
-    <nav class="nav">
-      <a class="nav-logo" href="./index.html" aria-label="Site logo">
-        <svg class="nav-logo-icon" width="100" height="30">
-          <use href="/energy.flow/assets/sprite-E8vg0sBb.svg#logo"></use>
-        </svg>
-      </a>
-      <ul class="nav-list">
-        <li class="nav-item">
-          <a class="nav-link {=$highlight-act}" href="./page-2.html">Page 2</a>
+    <header class="header"></header>
+  <div class="navbar">
+    <a class="header-logo" href="./index.html">energy.flow</a>
+
+    <!-- navigation -->
+    <nav class="header-nav">
+      <ul class="header-menu list">
+        <li class="header-menu-item">
+          <a class="header-menu-link link" href="./index.html">Home</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link {=$highlight-curr}" href="./page-3.html">Page 3</a>
+        <li class="header-menu-item">
+          <a class="header-menu-link link" href="./favorites.html">Favorites</a>
+        </li>
+      </ul>
+    </nav>
+
+    <!-- social-list -->
+    <ul class="header-social-list list">
+      <li class="header-social-list-item">
+        <a
+          class="header-social-link link"
+          href="https://www.facebook.com/goITclub/"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Follow us on Facebook"
+        >
+          <svg
+            class="header-social-icon"
+            width="28"
+            height="28"
+            aria-label="facebook icon"
+          >
+            <use href="/energy.flow/assets/sprite-gGcIrkOa.svg#icon-facebook"></use>
+          </svg>
+        </a>
+      </li>
+      <li class="header-social-list-item">
+        <a
+          class="header-social-link link"
+          href="https://www.instagram.com/goitclub/"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Follow us on Instagram"
+        >
+          <svg
+            class="header-social-icon"
+            width="28"
+            height="28"
+            aria-label="instagram icon"
+          >
+            <use href="/energy.flow/assets/sprite-gGcIrkOa.svg#icon-instagram"></use>
+          </svg>
+        </a>
+      </li>
+      <li class="header-social-list-item">
+        <a
+          class="header-social-link link"
+          href="https://www.youtube.com/c/GoIT"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Follow us on YouTube"
+        >
+          <svg
+            class="header-social-icon"
+            width="28"
+            height="28"
+            aria-label="youtube icon"
+          >
+            <use href="/energy.flow/assets/sprite-gGcIrkOa.svg#icon-youtube"></use>
+          </svg>
+        </a>
+      </li>
+    </ul>
+
+    <!-- mobile-menu -->
+    <div class="open-mobile-menu">
+      <button class="open-mobile-menu-btn js-open-menu" type="button">
+        <svg
+          class="open-mobile-menu-icon"
+          width="32"
+          height="16"
+          aria-label="mobile menu open icon"
+        >
+          <use href="/energy.flow/assets/sprite-gGcIrkOa.svg#icon-burger"></use>
+        </svg>
+      </button>
+    </div>
+  </div>
+</header>
+    <main>
+      <section class="hero"></section>
+  <div class="hero-container container">
+    <div class="hero-box">
+      <div class="static">
+        <div class="hero-bg-img"></div>
+        <div class="overlay-teg">
+          <ul class="hero-teg-list">
+            <li>
+              <p class="hero-teg">#Sport</p>
+            </li>
+            <li>
+              <p class="hero-teg">#Healthy</p>
+            </li>
+            <li>
+              <p class="hero-teg">#Workout</p>
+            </li>
+            <li>
+              <p class="hero-teg">#Diet</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="title-container">
+        <h1 class="hero-title">
+          Get<span class="another-color-text"> Body</span> in shape, Stay
+          healthy
+        </h1>
+
+        <p class="hero-text">
+          Transform your physique and embrace a healthier lifestyle with our
+          comprehensive fitness and nutrition support.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+      <section class="quote"></section>
+  <div class="quote-container container">
+    <div class="quote-block" data-aos="fade-right" data-aos-duration="2000">
+      <div class="quote-man-container">
+        <svg
+          class="quote-man-icon"
+          width="18"
+          height="20"
+          aria-label="icon-man-quote"
+        >
+          <use href="/energy.flow/assets/sprite-gGcIrkOa.svg#icon-man-quote"></use>
+        </svg>
+      </div>
+
+      <div class="quote-info-content">
+        <h2 class="quote-title">Quote of the day</h2>
+      </div>
+
+      <div class="quote-icon-container">
+        <svg class="quote-icon" width="28" height="28" aria-label="icon-quote">
+          <use href="/energy.flow/assets/sprite-gGcIrkOa.svg#icon-quote"></use>
+        </svg>
+      </div>
+    </div>
+
+    <div
+      class="quote-img-container"
+      data-aos="fade-left"
+      data-aos-duration="2000"
+    >
+      <div class="quote-img"></div>
+    </div>
+  </div>
+</section>
+      <section class="home-filters" id="home-filters"></section>
+  <div
+    class="container filters-container"
+    data-aos="fade-up"
+    data-aos-duration="2000"
+  >
+    <div class="title-filter-wrapper">
+      <h2 class="home-filters-title">Exercises</h2>
+      <span class="home-filters-title slash"></span>
+      <span class="home-filters-subtitle"></span>
+    </div>
+    <div class="filter-box-wrapper">
+      <div class="filters-box">
+        <button
+          class="filters-list-item active_item"
+          type="button"
+          data-filter="Muscles"
+        >
+          Muscles
+        </button>
+        <button
+          class="filters-list-item"
+          type="button"
+          data-filter="Body parts"
+        >
+          Body parts
+        </button>
+        <button class="filters-list-item" type="button" data-filter="Equipment">
+          Equipment
+        </button>
+      </div>
+      <div class="search-container"></div>
+    </div>
+    <div class="filters-cards-container">
+      <ul class="cards-list" id="cards-list">
+        <!-- Сюди будуть рендеритись усі картики -->
+      </ul>
+    </div>
+    <div class="filters-pagination">
+      <ul class="pagination-list">
+        <!-- <li class="pagination-element active_pag_item" value="1">1</li>
+        <li class="pagination-element" value="2">2</li> -->
+      </ul>
+      <ul class="exercsise-pagination-list"></ul>
+    </div>
+  </div>
+</section>
+      <section class="exercises" id="filtres"></section>
+  <div class="body-parts-container container">
+    <h2 class="header-exercises">Exercises/</h2>
+    <div class="filter-items">
+      <div class="buttons">
+        <button class="exercises-btn" type="button">Muscles</button>
+        <button class="exercises-btn active" type="button">Body parts</button>
+        <button class="exercises-btn" type="button">Equipment</button>
+      </div>
+      <form class="form">
+        <input class="search" name="delay" type="text" placeholder="Search" />
+        <button class="submit" type="submit">
+          <svg class="search-icon" width="18" height="18">
+            <use href="/energy.flow/assets/sprite-gGcIrkOa.svg#icon-exercises-search"></use>
+          </svg>
+        </button>
+      </form>
+    </div>
+    <div class="workout-plan">
+      <ul class="workout-list" id="body-parts">
+        <!-- <li class="list-item">
+          <div class="workout-and-icons">
+            <div class="workout-container">
+              <p class="workout-bubble">Workout</p>
+              <div class="star-cont">
+                <p class="rating-num">4.0</p>
+                <svg class="star-icon" width="18" height="18">
+                  <use
+                    href="./img/sprite/sprite.svg#icon-modal-rating-star"
+                  ></use>
+                </svg>
+              </div>
+            </div>
+            <div class="start-cont">
+              <button class="arrow-btn" type="button">
+                Start
+                <svg class="arrow" width="14" height="14">
+                  <use
+                    href="./img/sprite/sprite.svg#icon-exercises-arrow"
+                  ></use>
+                </svg>
+              </button>
+            </div>
+          </div>
+          <div class="training-title">
+            <svg class="icon-man" width="24" height="24">
+              <use href="./img/sprite/sprite.svg#icon-exercises-man"></use>
+            </svg>
+            <p class="training-name">Air bike</p>
+          </div>
+          <div class="indicators-cont">
+            <p class="indicators">
+              Burned calories: <span class="indicators-item">312 / 3 min</span>
+            </p>
+            <p class="indicators">
+              Body part: <span class="indicators-item">Waist</span>
+            </p>
+            <p class="indicators">
+              Target: <span class="indicators-item">Abs</span>
+            </p>
+          </div>
+        </li>
+        <li class="list-item">
+          <div class="workout-and-icons">
+            <div class="workout-container">
+              <p class="workout-bubble">Workout</p>
+              <div class="star-cont">
+                <p class="rating-num">5.0</p>
+                <svg class="star-icon" width="18" height="18">
+                  <use
+                    href="./img/sprite/sprite.svg#icon-modal-rating-star"
+                  ></use>
+                </svg>
+              </div>
+            </div>
+            <div class="start-cont">
+              <button class="arrow-btn" type="button">
+                Start
+                <svg class="arrow" width="14" height="14">
+                  <use
+                    href="./img/sprite/sprite.svg#icon-exercises-arrow"
+                  ></use>
+                </svg>
+              </button>
+            </div>
+          </div>
+          <div class="training-title">
+            <svg class="icon-man" width="24" height="24">
+              <use href="./img/sprite/sprite.svg#icon-exercises-man"></use>
+            </svg>
+            <p class="training-name">3/4 sit-up</p>
+          </div>
+          <div class="indicators-cont">
+            <p class="indicators">
+              Burned calories: <span class="indicators-item">220 / 3 min</span>
+            </p>
+            <p class="indicators">
+              Body part: <span class="indicators-item">Waist</span>
+            </p>
+            <p class="indicators">
+              Target: <span class="indicators-item">Abs</span>
+            </p>
+          </div>
+        </li>
+        <li class="list-item">
+          <div class="workout-and-icons">
+            <div class="workout-container">
+              <p class="workout-bubble">Workout</p>
+              <div class="star-cont">
+                <p class="rating-num">5.0</p>
+                <svg class="star-icon" width="18" height="18">
+                  <use
+                    href="./img/sprite/sprite.svg#icon-modal-rating-star"
+                  ></use>
+                </svg>
+              </div>
+            </div>
+            <div class="start-cont">
+              <button class="arrow-btn" type="button">
+                Start
+                <svg class="arrow" width="14" height="14">
+                  <use
+                    href="./img/sprite/sprite.svg#icon-exercises-arrow"
+                  ></use>
+                </svg>
+              </button>
+            </div>
+          </div>
+          <div class="training-title">
+            <svg class="icon-man" width="24" height="24">
+              <use href="./img/sprite/sprite.svg#icon-exercises-man"></use>
+            </svg>
+            <p class="training-name">45° side ben</p>
+          </div>
+          <div class="indicators-cont">
+            <p class="indicators">
+              Burned calories: <span class="indicators-item">323 / 3 min</span>
+            </p>
+            <p class="indicators">
+              Body part: <span class="indicators-item">Waist</span>
+            </p>
+            <p class="indicators">
+              Target: <span class="indicators-item">Abs</span>
+            </p>
+          </div>
+        </li>
+        <li class="list-item">
+          <div class="workout-and-icons">
+            <div class="workout-container">
+              <p class="workout-bubble">Workout</p>
+              <div class="star-cont">
+                <p class="rating-num">4.0</p>
+                <svg class="star-icon" width="18" height="18">
+                  <use
+                    href="./img/sprite/sprite.svg#icon-modal-rating-star"
+                  ></use>
+                </svg>
+              </div>
+            </div>
+            <div class="start-cont">
+              <button class="arrow-btn" type="button">
+                Start
+                <svg class="arrow" width="14" height="14">
+                  <use
+                    href="./img/sprite/sprite.svg#icon-exercises-arrow"
+                  ></use>
+                </svg>
+              </button>
+            </div>
+          </div>
+          <div class="training-title">
+            <svg class="icon-man" width="24" height="24">
+              <use href="./img/sprite/sprite.svg#icon-exercises-man"></use>
+            </svg>
+            <p class="training-name">Barbell reverse preacher curl</p>
+          </div>
+          <div class="indicators-cont">
+            <p class="indicators">
+              Burned calories: <span class="indicators-item">153 / 3 min</span>
+            </p>
+            <p class="indicators">
+              Body part: <span class="indicators-item">Waist</span>
+            </p>
+            <p class="indicators">
+              Target: <span class="indicators-item">Biceps</span>
+            </p>
+          </div>
+        </li>
+        <li class="list-item">
+          <div class="workout-and-icons">
+            <div class="workout-container">
+              <p class="workout-bubble">Workout</p>
+              <div class="star-cont">
+                <p class="rating-num">3.0</p>
+                <svg class="star-icon" width="18" height="18">
+                  <use
+                    href="./img/sprite/sprite.svg#icon-modal-rating-star"
+                  ></use>
+                </svg>
+              </div>
+            </div>
+            <div class="start-cont">
+              <button class="arrow-btn" type="button">
+                Start
+                <svg class="arrow" width="14" height="14">
+                  <use
+                    href="./img/sprite/sprite.svg#icon-exercises-arrow"
+                  ></use>
+                </svg>
+              </button>
+            </div>
+          </div>
+          <div class="training-title">
+            <svg class="icon-man" width="24" height="24">
+              <use href="./img/sprite/sprite.svg#icon-exercises-man"></use>
+            </svg>
+            <p class="training-name">Barbell rollerout</p>
+          </div>
+          <div class="indicators-cont">
+            <p class="indicators">
+              Burned calories: <span class="indicators-item">87 / 3 min</span>
+            </p>
+            <p class="indicators">
+              Body part: <span class="indicators-item">Waist</span>
+            </p>
+            <p class="indicators">
+              Target: <span class="indicators-item">Abs</span>
+            </p>
+          </div>
+        </li>
+        <li class="list-item">
+          <div class="workout-and-icons">
+            <div class="workout-container">
+              <p class="workout-bubble">Workout</p>
+              <div class="star-cont">
+                <p class="rating-num">5.0</p>
+                <svg class="star-icon" width="18" height="18">
+                  <use
+                    href="./img/sprite/sprite.svg#icon-modal-rating-star"
+                  ></use>
+                </svg>
+              </div>
+            </div>
+            <div class="start-cont">
+              <button class="arrow-btn" type="button">
+                Start
+                <svg class="arrow" width="14" height="14">
+                  <use
+                    href="./img/sprite/sprite.svg#icon-exercises-arrow"
+                  ></use>
+                </svg>
+              </button>
+            </div>
+          </div>
+          <div class="training-title">
+            <svg class="icon-man" width="24" height="24">
+              <use href="./img/sprite/sprite.svg#icon-exercises-man"></use>
+            </svg>
+            <p class="training-name">Barbell rollerout</p>
+          </div>
+          <div class="indicators-cont">
+            <p class="indicators">
+              Burned calories: <span class="indicators-item">87 / 3 min</span>
+            </p>
+            <p class="indicators">
+              Body part: <span class="indicators-item">Waist</span>
+            </p>
+            <p class="indicators">
+              Target: <span class="indicators-item">Abs</span>
+            </p>
+          </div>
+        </li>
+        <li class="list-item">
+          <div class="workout-and-icons">
+            <div class="workout-container">
+              <p class="workout-bubble">Workout</p>
+              <div class="star-cont">
+                <p class="rating-num">3.0</p>
+                <svg class="star-icon" width="18" height="18">
+                  <use
+                    href="./img/sprite/sprite.svg#icon-modal-rating-star"
+                  ></use>
+                </svg>
+              </div>
+            </div>
+            <div class="start-cont">
+              <button class="arrow-btn" type="button">
+                Start
+                <svg class="arrow" width="14" height="14">
+                  <use
+                    href="./img/sprite/sprite.svg#icon-exercises-arrow"
+                  ></use>
+                </svg>
+              </button>
+            </div>
+          </div>
+          <div class="training-title">
+            <svg class="icon-man" width="24" height="24">
+              <use href="./img/sprite/sprite.svg#icon-exercises-man"></use>
+            </svg>
+            <p class="training-name">Barbell side split squat v. 2</p>
+          </div>
+          <div class="indicators-cont">
+            <p class="indicators">
+              Burned calories: <span class="indicators-item">60 / 3 min</span>
+            </p>
+            <p class="indicators">
+              Body part: <span class="indicators-item">Waist</span>
+            </p>
+            <p class="indicators">
+              Target: <span class="indicators-item">Quads</span>
+            </p>
+          </div>
+        </li> -->
+      </ul>
+      <ul class="pages">
+        <li class="page-num active-item">1</li>
+        <li class="page-num">2</li>
+        <li class="page-num">3</li>
+      </ul>
+    </div>
+  </div>
+</section>
+      <section class="about-sport"></section>
+  <div class="about-sport-container container">
+    <div
+      class="image-about-sport"
+      data-aos="fade-right"
+      data-aos-duration="3000"
+    ></div>
+    <div
+      class="block-about-sport"
+      data-aos="fade-left"
+      data-aos-duration="3000"
+    >
+      <div class="icon-container-about-sport">
+        <div class="icon-about-sport">
+          <svg width="20" height="20" aria-label="icon-dumbbell">
+            <use href="/energy.flow/assets/sprite-gGcIrkOa.svg#icon-dumbbell"></use>
+          </svg>
+        </div>
+      </div>
+      <div class="text-about-sport">
+        <h2 class="title-about-sport">110 min</h2>
+        <h3 class="subtitle-about-sport">Daily norm of sports</h3>
+        <p class="content-about-sport">
+          The World Health Organization recommends at least 150 minutes of
+          moderate-intensity aerobic physical activity throughout the week for
+          adults aged 18-64. However, what happens if we adjust that number to
+          110 minutes every day?
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+    </main>
+
+    <footer class="footer"></footer>
+  <div class="footer-container container">
+    <div class="footer-navigation">
+      <a class="footer-logo" href="./index.html">energy.flow</a>
+      <ul class="footer-social-list">
+        <li class="footer-social-item">
+          <a
+            class="footer-social-link"
+            href="https://www.facebook.com/goITclub/"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Follow us on Facebook"
+          >
+            <svg
+              class="footer-social-icon"
+              width="20"
+              height="20"
+              aria-label="facebook icon"
+            >
+              <use href="/energy.flow/assets/sprite-gGcIrkOa.svg#icon-facebook"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="footer-social-item">
+          <a
+            class="footer-social-link"
+            href="https://www.instagram.com/goitclub/"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Follow us on Instagram"
+          >
+            <svg
+              class="footer-social-icon"
+              width="20"
+              height="20"
+              aria-label="instagram icon"
+            >
+              <use href="/energy.flow/assets/sprite-gGcIrkOa.svg#icon-instagram"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="footer-social-item">
+          <a
+            class="footer-social-link"
+            href="https://www.youtube.com/c/GoIT"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Follow us on YouTube"
+          >
+            <svg
+              class="footer-social-icon"
+              width="20"
+              height="20"
+              aria-label="youtube icon"
+            >
+              <use href="/energy.flow/assets/sprite-gGcIrkOa.svg#icon-youtube"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </div>
+    <p class="footer-slogan">
+      Transforming your <span class="footer-slogan-item">body</span> shape with
+      us
+    </p>
+    <div class="subscription-container">
+      <p class="footer-subscription-title">
+        Subscribe and learn about new exercises!
+      </p>
+      <form id="subscriptionForm" class="footer-form">
+        <label
+          for="footer-email"
+          class="footer-label"
+          aria-label="footer-email"
+        >
+          <input
+            type="email"
+            id="footer-email"
+            name="footer-email"
+            class="footer-input"
+            placeholder="Email"
+            required
+          />
+        </label>
+        <button type="submit" class="footer-button">Send</button>
+      </form>
+    </div>
+    <div class="footer-security">
+      <p class="footer-rights upper">Energy Flow. All rights reserved.</p>
+      <div class="regulations">
+        <a
+          class="policy footer-link"
+          href="https://docs.google.com/document/d/1tqfbggxin090AOBJPrLOXEhe8J5evY51hydL-qnPLPY/edit"
+          target="_blank"
+          >Privacy Policy</a
+        >
+        <p class="policy">/</p>
+        <a
+          class="policy footer-link"
+          href="https://docs.google.com/document/d/108oFTQE9rDfRvJFidDBkhtKdUkFISrdXOwUi1Ns-pBU/edit"
+          target="_blank"
+          >Terms of Service</a
+        >
+      </div>
+    </div>
+  </div>
+</footer>
+    <div class="back-to-top is-hidden"></div>
+  <button class="back-to-top-button">
+    <svg class="back-to-top-svg mobile" width="20" height="20">
+      <use href="./sprite.svg#icon-mobile-back-to-top"></use>
+    </svg>
+
+    <svg class="back-to-top-svg tablet" width="35" height="35">
+      <use href="./sprite.svg#icon-mobile-back-to-top"></use>
+    </svg>
+
+    <svg class="back-to-top-svg pc" width="50" height="50">
+      <use href="./sprite.svg#icon-mobile-back-to-top"></use>
+    </svg>
+  </button>
+</div>
+    <div class="mobile-menu js-menu">
+</div>
+  <div class="mobile-menu-header">
+    <a class="mobile-menu-logo" href="./index.html">energy.flow</a>
+
+    <button class="mobile-menu-close-button js-close-menu" type="button">
+      <svg
+        class="mobile-close-icon"
+        aria-label="mobile menu close icon"
+        width="20"
+        height="20"
+      >
+        <use href="/energy.flow/assets/sprite-gGcIrkOa.svg#icon-close-menu"></use>
+      </svg>
+    </button>
+  </div>
+
+  <div class="mobile-menu-content">
+    <nav class="mobile-menu-nav">
+      <ul class="mobile-menu-list list">
+        <li class="mobile-menu-item">
+          <a class="header-menu-link link" href="./index.html">Home</a>
+        </li>
+        <li class="mobile-menu-item">
+          <a class="header-menu-link link" href="./favorites.html">Favorites</a>
         </li>
       </ul>
     </nav>
   </div>
-</header>
 
-
-    <main>
-      <!-- Loads the specified .html file -->
-      <section class="vite-promo">
-  <div class="container">
-    <div class="vite-promo-thumb">
+  <ul class="mobile-menu-social-list list">
+    <li class="mobile-menu-social-list-item">
       <a
-        class="vite-promo-link"
-        href="https://vitejs.dev/"
+        class="mobile-menu-social-link link"
+        href="https://www.facebook.com/goITclub/"
         target="_blank"
-        rel="noopener noreferrer"
-        aria-label="Link to Vite official website"
-        title="Vite.js  build tool"
       >
-        <!-- Path to images as from index.html file -->
-        <img
-          class="pic"
-          src="/energy.flow/assets/vite-logo-9o_aqrTe.png"
-          alt="Vite logo"
-          width="640"
-          height="640"
-        />
+        <svg
+          class="mobile-menu-social-icon"
+          width="25"
+          height="25"
+          aria-label="facebook icon"
+        >
+          <use href="/energy.flow/assets/sprite-gGcIrkOa.svg#icon-facebook"></use>
+        </svg>
       </a>
+    </li>
+    <li class="mobile-menu-social-list-item">
+      <a
+        class="mobile-menu-social-link link"
+        href="https://www.instagram.com/goitclub/"
+        target="_blank"
+      >
+        <svg
+          class="mobile-menu-social-icon"
+          width="25"
+          height="25"
+          aria-label="instagram icon"
+        >
+          <use href="/energy.flow/assets/sprite-gGcIrkOa.svg#icon-instagram"></use>
+        </svg>
+      </a>
+    </li>
+    <li class="mobile-menu-social-list-item">
+      <a
+        class="mobile-menu-social-link link"
+        href="https://www.youtube.com/c/GoIT"
+        target="_blank"
+      >
+        <svg
+          class="mobile-menu-social-icon"
+          width="25"
+          height="25"
+          aria-label="youtube icon"
+        >
+          <use href="/energy.flow/assets/sprite-gGcIrkOa.svg#icon-youtube"></use>
+        </svg>
+      </a>
+    </li>
+  </ul>
+</div>
+    <div class="backdrop">
+  <div class="modal-exercise">
+    <button class="close-btn" type="button">
+      <svg
+        class="modal-close-icon"
+        width="24"
+        height="24"
+        aria-label="modal close icon"
+      >
+        <use href="/energy.flow/assets/sprite-gGcIrkOa.svg#icon-modal-close"></use>
+      </svg>
+    </button>
+
+    <div class="base-ex-info-modal js-modal-container"></div>
+  </div>
+</div>
+
+
+    <div class="modal-rating  js-modal"></div>
+    <div class="window-modal-rating">
+
+        <button class="modal-close-btn js-close" type="button">
+            <svg class="close-btn-icon" width="24" height="24" aria-label="modal close icon">
+                <use href="/energy.flow/assets/sprite-gGcIrkOa.svg#icon-modal-close"></use>
+            </svg>
+        </button>
+        <h3 class="mrating-title">Rating</h3>
+        <form action="#" class="rating-form">
+
+            <div class="mrating rating-set">
+                <div class="mrating-value">0.0</div>
+                <div class="mrating-body">
+                    <svg class="modal-star-icon" width="24" height="24" aria-label="modal star icon">
+                        <use href="/energy.flow/assets/sprite-gGcIrkOa.svg#icon-exercises-star"></use>
+                    </svg>
+                    <svg class="modal-star-icon" width="24" height="24" aria-label="modal star icon">
+                        <use href="/energy.flow/assets/sprite-gGcIrkOa.svg#icon-exercises-star"></use>
+                    </svg>
+                    <svg class="modal-star-icon" width="24" height="24" aria-label="modal star icon">
+                        <use href="/energy.flow/assets/sprite-gGcIrkOa.svg#icon-exercises-star"></use>
+                    </svg>
+                    <svg class="modal-star-icon" width="24" height="24" aria-label="modal star icon">
+                        <use href="/energy.flow/assets/sprite-gGcIrkOa.svg#icon-exercises-star"></use>
+                    </svg>
+                    <svg class="modal-star-icon" width="24" height="24" aria-label="modal star icon">
+                        <use href="/energy.flow/assets/sprite-gGcIrkOa.svg#icon-exercises-star"></use>
+                    </svg>
+                    <div class="mrating-active">
+                        <svg class="modal-star-icony" width="24" height="24" aria-label="modal star icon">
+                            <use href="/energy.flow/assets/sprite-gGcIrkOa.svg#icon-exercises-star"></use>
+                        </svg>
+                        <svg class="modal-star-icony" width="24" height="24" aria-label="modal star icon">
+                            <use href="/energy.flow/assets/sprite-gGcIrkOa.svg#icon-exercises-star"></use>
+                        </svg>
+                        <svg class="modal-star-icony" width="24" height="24" aria-label="modal star icon">
+                            <use href="/energy.flow/assets/sprite-gGcIrkOa.svg#icon-exercises-star"></use>
+                        </svg>
+                        <svg class="modal-star-icony" width="24" height="24" aria-label="modal star icon">
+                            <use href="/energy.flow/assets/sprite-gGcIrkOa.svg#icon-exercises-star"></use>
+                        </svg>
+                        <svg class="modal-star-icony" width="24" height="24" aria-label="modal star icon">
+                            <use href="/energy.flow/assets/sprite-gGcIrkOa.svg#icon-exercises-star"></use>
+                        </svg>
+                    </div>
+
+                    <div class="mrating-items">
+                        <input type="radio" class="mrating-item" value="1" name="mrating" required>
+                        <input type="radio" class="mrating-item" value="2" name="mrating">
+                        <input type="radio" class="mrating-item" value="3" name="mrating">
+                        <input type="radio" class="mrating-item" value="4" name="mrating">
+                        <input type="radio" class="mrating-item" value="5" name="mrating">
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="message-container">
+                <p class="message"></p>
+            </div>
+
+
+            <label for="email"></label>
+            <input type="email" class="email" placeholder="Email" id="email" name="email"
+                title="xxxx.xxx@xxxx.xxx" required>
+            <label for="comment"></label>
+            <textarea class="textarea" placeholder="Your comment" id="comment" name="comment" required></textarea>
+            <button class="rating-button js-sbutton" type="submit" name="ratbtn"> Send</button>
+
+        </form>
     </div>
-    <h1 class="main-title">
-      <span class="main-title-gradient">Vite</span>
-      Template by
-      <a
-        class="main-title-link"
-        href="https://github.com/goitacademy/vanilla-app-template"
-        target="_blank"
-        rel="noopener noreferrer"
+</div>
+    <div id="confirmationModal" class="modal-subscribe"></div>
+  <div class="subscribe-modal-content">
+    <div class="modal-subscribe-icon-container">
+      <svg
+        class="modal-subscribe-icon"
+        width="28"
+        height="28"
+        aria-label="icon-quote"
       >
-        GoIT
-      </a>
-    </h1>
-  </div>
-</section>
-
-      <article class="badges">
-  <div class="container">
-    <ul class="badges-list">
-      <li class="badges-item">
-        <a
-          class="badges-link"
-          href="https://www.npmjs.com/package/vite-plugin-html-inject"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          HTML Inject
-        </a>
-      </li>
-      <li class="badges-item">
-        <a
-          class="badges-link"
-          href="https://www.npmjs.com/package/vite-plugin-full-reload"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Full Reload
-        </a>
-      </li>
-      <li class="badges-item">
-        <a
-          class="badges-link"
-          href="https://www.npmjs.com/package/postcss-sort-media-queries"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Sort Media Queries
-        </a>
-      </li>
-    </ul>
-  </div>
-</article>
-
-    </main>
-
-    <footer class="footer">
-  <div class="container">
-    <p class="footer-desc">
-      Made with ✨ by
-      <a
-        class="footer-link"
-        href="https://goit.global/ua/"
-        target="_blank"
-        rel="noopener noreferrer"
+        <use href="/energy.flow/assets/sprite-gGcIrkOa.svg#icon-quote"></use>
+      </svg>
+    </div>
+    <button class="modal-subscribe-close-btn" type="button">
+      <svg
+        class="close-btn-icon"
+        width="24"
+        height="24"
+        aria-label="modal close icon"
       >
-        GoIT team
-      </a>
-    </p>
+        <use href="/energy.flow/assets/sprite-gGcIrkOa.svg#icon-modal-close"></use>
+      </svg>
+    </button>
+    <p class="modal-subscribe-text" id="modalSubscribeText"></p>
+    <button class="modal-subscribe-close-button" type="button">Close</button>
   </div>
-</footer>
+</div>
 
 
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
